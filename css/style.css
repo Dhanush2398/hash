@@ -220,7 +220,7 @@ h6,
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(27, 42, 66, 0.7);
+  background: rgba(27, 42, 66, 0.027);
   z-index: 1;
 }
 
@@ -228,6 +228,9 @@ h6,
   .carousel-caption h5 {
     font-size: 14px;
     font-weight: 500 !important;
+  }
+  .btn-contact {
+    display: none;
   }
 
   .carousel-caption h1 {
