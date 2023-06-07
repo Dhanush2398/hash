@@ -2,15 +2,28 @@
   "use strict";
 
   // Spinner
-  var spinner = function () {
-    setTimeout(function () {
-      if ($("#spinner").length > 0) {
-        $("#spinner").removeClass("show");
-      }
-    }, 1);
-  };
-  spinner();
-
+  //   var spinner = function () {
+  //     setTimeout(function () {
+  //       if ($("#spinner").length > 0) {
+  //         $("#spinner").removeClass("show");
+  //       }
+  //     }, 1);
+  //   };
+  //   spinner();
+  /**
+   * Preloader
+   */
+  const preloader = document.querySelector("#preloader");
+  if (preloader) {
+    window.addEventListener("load", () => {
+      setTimeout(() => {
+        preloader.classList.add("loaded");
+      }, 1000);
+      setTimeout(() => {
+        preloader.remove();
+      }, 2000);
+    });
+  }
   // Initiate the wowjs
   new WOW().init();
 
