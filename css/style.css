@@ -340,7 +340,9 @@ h6,
     left: 0;
   }
 }
-
+.mt-5 {
+  margin-top: 0rem !important;
+}
 /*** Service ***/
 .service-item {
   position: relative;
@@ -484,6 +486,61 @@ h6,
 }
 
 /*** Miscellaneous ***/
+.button {
+  position: relative;
+  padding: 18px 50px;
+  background: rgb(17, 17, 17);
+  font-size: 20px;
+  letter-spacing: 1px;
+  outline: none;
+  border-radius: 50px;
+  font-weight: 600;
+  border: 1px solid #505050;
+  overflow: hidden;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+}
+
+.button span {
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 2;
+  transition: 0.5s ease;
+  pointer-events: none;
+  color: #979797;
+}
+
+.button:active {
+  transform: scale(0.98);
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgb(255, 255, 255);
+  left: 0;
+  border-radius: 50%;
+  top: 0;
+  transform: translateY(110%);
+  pointer-events: none;
+  z-index: 1;
+  transition: transform 0.5s cubic-bezier(0, 0, 0.1, 1),
+    border-radius 0.5s cubic-bezier(0, 0.4, 0.1, 1);
+}
+
+.button:hover > span {
+  color: rgb(25, 25, 25);
+}
+
+.button:hover::before {
+  border-radius: 0;
+  transform: translateY(0%);
+  transition: transform 0.5s cubic-bezier(0, 5, 0.1, 1),
+    border-radius 0.8s cubic-bezier(0, 0.4, 0.1, 1);
+}
 @media (min-width: 991.98px) {
   .facts {
     position: relative;
@@ -500,11 +557,11 @@ h6,
   z-index: 99;
 }
 
-.bg-header {
+/* .bg-header {
   background: linear-gradient(rgba(9, 30, 62, 0.7), rgba(9, 30, 62, 0.7)),
     url(../img/carousel-1.jpg) center center no-repeat;
   background-size: cover;
-}
+} */
 
 .link-animated a {
   transition: 0.5s;
@@ -604,7 +661,7 @@ address span a {
   text-decoration: underline;
 }
 .dark {
-  background-color: #161616;
+  background-color: #00060e;
   background-image: url(../img/pattern_40.gif);
   background-position: top left;
   background-repeat: repeat;
