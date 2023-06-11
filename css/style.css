@@ -816,6 +816,7 @@ address span a {
   margin-top: 5px;
   padding: 20px 10px;
 }
+
 .home .hero-txt .hero-work {
   font-family: "Oswald";
   font-weight: 300;
@@ -859,7 +860,7 @@ address span a {
     height: 1rem;
   }
   .home .hero-txt .hero-title {
-    font-size: 32px;
+    font-size: 24px;
     line-height: 8px;
     letter-spacing: 1px;
   }
