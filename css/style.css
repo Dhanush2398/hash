@@ -220,14 +220,20 @@ h6,
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(27, 42, 66, 0.027);
+  background: rgba(4, 7, 14, 0.377);
   z-index: 1;
+}
+.carousel-item img {
+  height: 100vh;
 }
 
 @media (max-width: 576px) {
   .carousel-caption h5 {
     font-size: 14px;
     font-weight: 500 !important;
+  }
+  .carousel-item img {
+    height: 50vh;
   }
   .btn-contact {
     display: none;
@@ -661,8 +667,9 @@ address span a {
   text-decoration: underline;
 }
 .dark {
-  background-color: #00060e;
-  background-image: url(../img/pattern_40.gif);
+  /* background-color: #000; */
+  background: linear-gradient(rgba(2, 7, 14, 0.887), rgba(1, 4, 9, 0.91)),
+    url(../img/testimonials.png) center center no-repeat;
   background-position: top left;
   background-repeat: repeat;
   color: #fff;
@@ -772,12 +779,14 @@ address span a {
 }
 .home {
   font-family: "Open Sans";
-  background-image: url(/img/hero-img9.jpg);
+  background: linear-gradient(rgba(9, 30, 62, 0.486), rgba(9, 30, 62, 0.466)),
+    url(../img/slide/20230608120353_[fpdl.in]_developing-programmer-development-website-design-coding-technologies-working-software-company-office_18497-1234_medium.jpg)
+      center center no-repeat;
   background-position: top center;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #000;
+  background-color: #00000079;
   padding: 100px 0;
   position: relative;
   /* Temp CSS */
@@ -961,4 +970,18 @@ address span a {
   100% {
     width: 0%;
   }
+}
+.aboutstart {
+  /* background: url(../img/grey.png) center center no-repeat; */
+  background: linear-gradient(
+      rgba(61, 94, 143, 0.002),
+      rgba(62, 96, 148, 0.002)
+    ),
+    url(../img/grey.png) center center no-repeat;
+  background-size: cover;
+}
+.featuresstart {
+  background: linear-gradient(#ffffffea, #ffffffea),
+    url(../img/about-bg.jpg) center center no-repeat;
+  background-size: cover;
 }
