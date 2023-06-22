@@ -2,28 +2,7 @@
   "use strict";
 
   // Spinner
-  var spinner = function () {
-    setTimeout(function () {
-      if ($("#spinner").length > 0) {
-        $("#spinner").removeClass("show");
-      }
-    }, 1);
-  };
-  spinner();
-  /**
-   * Preloader
-   */
-  const preloader = document.querySelector("#preloader");
-  if (preloader) {
-    window.addEventListener("load", () => {
-      setTimeout(() => {
-        preloader.classList.add("loaded");
-      }, 1000);
-      setTimeout(() => {
-        preloader.remove();
-      }, 2000);
-    });
-  }
+
   // Initiate the wowjs
   new WOW().init();
 
@@ -82,29 +61,6 @@
     return false;
   });
 
-  // Testimonials carousel
-  $(".testimonial-carousel").owlCarousel({
-    autoplay: true,
-    smartSpeed: 1500,
-    dots: true,
-    loop: true,
-    center: true,
-    responsive: {
-      0: {
-        items: 1,
-      },
-      576: {
-        items: 1,
-      },
-      768: {
-        items: 2,
-      },
-      992: {
-        items: 3,
-      },
-    },
-  });
-
   // Vendor carousel
   $(".vendor-carousel").owlCarousel({
     loop: true,
@@ -121,11 +77,25 @@
         items: 4,
       },
       768: {
-        items: 6,
+        items: 5,
       },
       992: {
-        items: 8,
+        items: 5,
       },
     },
   });
 })(jQuery);
+/**
+ * Preloader
+ */
+const preloader = document.querySelector("#preloader");
+if (preloader) {
+  window.addEventListener("load", () => {
+    setTimeout(() => {
+      preloader.classList.add("loaded");
+    }, 1000);
+    setTimeout(() => {
+      preloader.remove();
+    }, 2000);
+  });
+}
