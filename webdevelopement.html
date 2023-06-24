@@ -295,71 +295,72 @@
     </div>
    
 <section id="contact" >
-   
-
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8 animated" data-animate="fadeInLeft">
-          <form action="#">
-            <div class="row">
-              <div class="col-md-6">
-                <input
-                  type="text"
-                  class="form-control"
-                  name="name"
-                  placeholder="Your Name"
-                />
-              </div>
-              <div class="col-md-6">
-                <input
-                  type="email"
-                  class="form-control"
-                  name="email"
-                  placeholder="Your Email"
-                />
-              </div>
-              <div class="col-md-12">
-                <textarea
-                  class="form-control"
-                  rows="3"
-                  name="message"
-                  placeholder="Tell Us Everything"
-                ></textarea>
-              </div>
-              <div class="col-md-12">
-                <button class="btn btn-default submit">Send Message</button>
-              </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 animated" data-animate="fadeInLeft">
+        <form  action="mail.php"
+        method="post"
+        role="form"
+        class="php-email-form">
+          <div class="row">
+            <div class="col-md-6">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Your Name"
+                name="name"
+              />
             </div>
-          </form>
-        </div>
+            <div class="col-md-6">
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Your Email"
+                name="email"
+              />
+            </div>
+            <div class="col-md-12">
+              <textarea
+                class="form-control"
+                rows="3"
+                placeholder="Tell Us Everything"
+                name="message"
+              ></textarea>
+            </div>
+            <div class="col-md-12">
+              <button class="btn btn-default submit">Send Message</button>
+            </div>
+          </div>
+        </form>
+      </div>
 
-        <div class="col-md-4 animated" data-animate="fadeInRight">
-          <address>
-            <span
-              ><i class="bi bi-geo-alt-fill text-primary me-2 "></i>#90/2, 13th Cross, 9th Main RR Nagar, Bengalore-98, India</span
-            >
-            <span><i class="fa fa-phone me-2"></i>+91 9606 75 2050</span>
-            <span
-              ><i class="fa fa-envelope text-primary me-2"></i>
-              <a href="mailto:info@hashtocolon.com"
-                >info@hashtocolon.com</a
-              ></span
-            >
-            <span
-              ><i class="fa fa-globe me-2"></i>
-              <a href="http://hashtocolon.com/"
-                >hashtocolon.com</a
-              ></span
-            >
-          </address>
-        </div>
+      <div class="col-md-4 animated" data-animate="fadeInRight">
+        <address>
+          <span
+            ><i class="bi bi-geo-alt-fill text-primary me-2 fa-lg"></i> #90/2, 13th Cross, 9th Main RR Nagar, Bengalore-98, India</span
+          >
+          <span><i class="fa fa-phone fa-lg"></i>+91 9606 75 2050</span>
+          <span
+            ><i class="fa fa-envelope text-primary me-2"></i>
+            <a href="mailto:info@hashtocolon.com"
+              >info@hashtocolon.com</a
+            ></span
+          >
+          <span
+            ><i class="fa fa-globe fa-lg"></i>
+            <a href="http://hashtocolon.com/"
+              >hashtocolon.com</a
+            ></span
+          >
+        </address>
       </div>
     </div>
-  </section>
-    </div>
+  </div>
+</section>
   </div>
 </div>
-<!-- Pricing Plan End -->
+</div>
+<!-- Footer Start -->
   <!-- Footer Start -->
   <div
     class="container-fluid bg-dark text-light mt-5 wow fadeInUp"
