@@ -586,7 +586,12 @@ h6,
   cursor: pointer;
   font-family: "Inter", sans-serif;
 }
-
+@media (max-width: 500px) {
+  .button {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+}
 .button span {
   width: 100%;
   height: auto;
