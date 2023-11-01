@@ -114,7 +114,7 @@ window.onload = function () {
       //document.onkeydown = function(e) {
       // "F12" key
       if (event.keyCode == 123) {
-        disabledEvent(e);
+        // disabledEvent(e);
       }
       // "U" key
       if (e.ctrlKey && e.keyCode == 85) {
