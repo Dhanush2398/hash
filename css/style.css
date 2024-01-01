@@ -1,4 +1,5 @@
 /********** Template CSS **********/
+@import url("https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap");
 :root {
   --primary: #06a3da;
   --secondary: #0d195e;
@@ -223,10 +224,19 @@ h6,
   background: rgba(13, 24, 48, 0.582);
   z-index: 1;
 }
+.teko-font {
+  font-family: "Teko", sans-serif !important;
+}
 .carousel-item img {
   height: 100vh;
 }
-
+@font-face {
+  font-family: Blanka;
+  src: url(/vendors/fonts/Blanka-Regular.otf);
+}
+.Blanka-font {
+  font-family: Blanka;
+}
 @media (max-width: 576px) {
   .carousel-caption h5 {
     font-size: 14px;
@@ -575,7 +585,7 @@ h6,
 .button {
   position: relative;
   padding: 18px 50px;
-  background: rgb(17, 17, 17);
+  background: rgb(243, 241, 241);
   font-size: 20px;
   letter-spacing: 1px;
   outline: none;
@@ -599,7 +609,7 @@ h6,
   z-index: 2;
   transition: 0.5s ease;
   pointer-events: none;
-  color: #979797;
+  color: #000;
 }
 
 .button:active {
@@ -611,7 +621,7 @@ h6,
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgb(255, 255, 255);
+  background: #000;
   left: 0;
   border-radius: 50%;
   top: 0;
@@ -623,7 +633,7 @@ h6,
 }
 
 .button:hover > span {
-  color: rgb(25, 25, 25);
+  color: #fff;
 }
 
 .button:hover::before {
@@ -853,8 +863,8 @@ address span a {
 .btn-main:focus,
 .btn-main:active {
   color: #fff;
-  background-color: #4ecdc4;
-  border-color: #4ecdc4;
+  background-color: #0ca5da;
+  border-color: #0ca5da;
 }
 .home {
   font-family: "Open Sans";
